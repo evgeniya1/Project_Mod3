@@ -65,6 +65,8 @@ To better understand the differences, a violin plot showing distributions for th
 
 As can be seen from the plot above as confirmed by the non-parametric Kruskal-Wallis H-test, having the null hypothesis that the population medians of all of the groups are equal (p-value is extremely low, null hypothesis is rejected), different class sizes have statistically significantly different medians or at least one of the groups.
 
+### Influence of class size and instructor
+
 Now the question is does class size influence holds for any instructor? To answer this question, first we need to select instructors that taught classes with have more uniform distribution with respect to the class size and simultaneously having larger number of classes taught to have enough observations.
 
 ![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/table_sort_instructors.png)
@@ -75,3 +77,19 @@ According to the figure below that shows the violin plots for A-fraction distrib
 
 For selected 247 instructors (out of total 10165) with threshold of 5 classes (not less than 5 classes taught in each class size category) based on the same Kruskal-Wallis H-test but done for a given instructor, about 61% of instructors grade classes of different sizes differently (*p*-value treshold is 0.05), while for the rest 39% of instructors there is no statistically significant defference in grading classes of different sizes. 
 
+ ### Influence of class size and field of study
+ 
+ Lastly, is there an influence of field of study, i.e. STEM or humanity? Figure below shows the violin plot of A-fraction grade distribution for different sizes and fields of study. It can be seen that the class size influence remains the same in both fields of study.
+ 
+![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/class_size_subject_type.png)
+
+According to the Kruskal-Wallis H-test, there is a significant difference in terms of medians between STEM and humanity groups in each class size category.
+
+## Conclusions
+
+Exploratory data analysis and hypothesis testing of the grading dataset from UW Madison university collected over 11 years period arrive to the following conclusions. 
+
+- Majority of instructors grade differently if compared to the overall population in terms of A-grade.
+- Groups formed by the class size (small, medium, large) differ significantly in terms of A-grade fraction median.
+- For 61 % of instructors class size has significant influence on A-grade fraction.
+- There is a statistically significant difference for A-grade fraction between STEM and humanity fields of study that persists for different class sizes.
