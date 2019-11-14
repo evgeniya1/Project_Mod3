@@ -58,3 +58,20 @@ How do we define categories for class sizes? I decided to define boundaries usin
 class of small size has prominent maximum at A-fraction = 1, medium is closer to uniform distribution, while larger has a prominent maximum around A-fraction = 0.2.
 
 ![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/Afrac_quartile.png)
+
+To better understand the differences, a violin plot showing distributions for the defined class sizes is presented below.
+
+![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/Afrac_class_size.png)
+
+As can be seen from the plot above as confirmed by the non-parametric Kruskal-Wallis H-test, having the null hypothesis that the population medians of all of the groups are equal (p-value is extremely low, null hypothesis is rejected), different class sizes have statistically significantly different medians or at least one of the groups.
+
+Now the question is does class size influence holds for any instructor? To answer this question, first we need to select instructors that taught classes with have more uniform distribution with respect to the class size and simultaneously having larger number of classes taught to have enough observations.
+
+![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/table_sort_instructors.png)
+
+According to the figure below that shows the violin plots for A-fraction distribution, top 10 instructor clearly have different grading styles: for some there is a difference between class sizes, but for some this no difference.
+
+![](https://github.com/evgeniya1/Project_Mod3/blob/master/figs/instuctor_uniform_max.png)
+
+For selected 247 instructors (out of total 10165) with threshold of 5 classes (not less than 5 classes taught in each class size category) based on the same Kruskal-Wallis H-test but done for a given instructor, about 61% of instructors grade classes of different sizes differently (*p*-value treshold is 0.05), while for the rest 39% of instructors there is no statistically significant defference in grading classes of different sizes. 
+
